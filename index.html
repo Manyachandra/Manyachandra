@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Manya Chandra — Software Engineer</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --card: #161b22;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #2f81f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    background: radial-gradient(circle at top left, #1b2530, #0f1115);
+    color: var(--text);
+    line-height: 1.55;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 48px 24px; }
+  header { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+  .avatar {
+    width: 112px; height: 112px; border-radius: 50%;
+    background: linear-gradient(135deg,#2f81f7,#a371f7);
+    display: grid; place-items: center; font-weight: 800; font-size: 36px; color: white;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  .title-block h1 { margin: 0 0 8px; font-size: 34px; letter-spacing: 0.2px; }
+  .title-block p { margin: 0; color: var(--muted); font-size: 16px; }
+  .badges { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .badge {
+    background: #0d1117; color: #c9d1d9; border: 1px solid #30363d;
+    padding: 6px 10px; border-radius: 999px; font-size: 12px;
+  }
+  section { margin-top: 52px; }
+  section h2 { font-size: 20px; margin: 0 0 18px; color: #ffffffcc; }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card {
+    background: var(--card); border: 1px solid #21262d; border-radius: 14px;
+    padding: 20px; transition: transform .08s ease, border-color .15s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: #30363d; }
+  .card h3 { margin: 4px 0 8px; font-size: 17px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  .card a { color: #58a6ff; text-decoration: none; }
+  .timeline { display: grid; gap: 14px; }
+  .timeline-item { background: var(--card); border: 1px solid #21262d; border-radius: 14px; padding: 18px; }
+  .timeline-item .role { font-weight: 700; }
+  .timeline-item .meta { color: var(--muted); font-size: 13px; }
+  footer { margin-top: 60px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="avatar" aria-hidden="true">MC</div>
+    <div class="title-block">
+      <h1>Manya Chandra</h1>
+      <p>Software Engineer — Full-stack development, system design, and developer experience.</p>
+      <div class="badges">
+        <span class="badge">B.Tech CSE — NIT Patna</span>
+        <span class="badge">Software Engineer — Shree Cement</span>
+        <span class="badge">Software Engineer — Mphasis</span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      Manya Chandra is a software engineer focused on building pragmatic, maintainable systems end-to-end.
+      She earned her <strong>Bachelor of Technology in Computer Science</strong> from the
+      <strong>National Institute of Technology Patna</strong>, where she built strong foundations in algorithms,
+      data structures, and software engineering practices.
+      After graduation, she joined <strong>Shree Cement Company</strong> as a <strong>Software Engineer</strong>,
+      contributing to production systems and cross-functional delivery.
+      She later continued her industry career at <strong>Mphasis Limited</strong> as a <strong>Software Engineer</strong>,
+      working on scalable applications and modern engineering workflows.
+    </p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="role">Software Engineer — Mphasis Limited</div>
+        <div class="meta">Full-time</div>
+        <p>Building and maintaining enterprise-grade applications with modern toolchains and reliable delivery practices.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="role">Software Engineer — Shree Cement Company</div>
+        <div class="meta">Full-time</div>
+        <p>Developed production-focused software systems, collaborated with multidisciplinary teams, and improved operational tooling.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Selected Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Portfolio</h3>
+        <p>Personal portfolio demonstrating front-end craftsmanship and interactive UI.</p>
+        <a href="https://github.com/Manyachandra/Portfolio" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>ExpressProject1</h3>
+        <p>TypeScript Express app with Pug views and structured form endpoints.</p>
+        <a href="https://github.com/Manyachandra/ExpressProject1" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>To Do List</h3>
+        <p>Interactive task manager with dark/light mode and drag-and-drop.</p>
+        <a href="https://github.com/Manyachandra/To_Do_List" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>travelDiaries</h3>
+        <p>MERN travel blogging platform with media uploads and contextual posts.</p>
+        <a href="https://github.com/Manyachandra/travelDiaries" target="_blank" rel="noopener">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Manya Chandra. Built and published from the Manya-Chandra profile repo.
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
